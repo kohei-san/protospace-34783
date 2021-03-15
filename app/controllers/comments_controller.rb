@@ -6,8 +6,8 @@ def create
   else
     @prototype = @comment.prototype
     @comments = @prototype.comments
-    # render "prototypes/show"
-    redirect_to prototype_path(@comment.prototype)
+    render "prototypes/show"
+    # redirect_to prototype_path(@comment.prototype)
   end
 end
 
